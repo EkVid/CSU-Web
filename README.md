@@ -1,12 +1,5 @@
 # CSU Website
 
-| Site                                   | Status                                                                                                                                                        |
-| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Production](https://ds3utsc.com)      | [![Netlify Status](https://api.netlify.com/api/v1/badges/14115eba-7e02-4351-80ce-9da8a136ca6b/deploy-status)](https://app.netlify.com/sites/ds3-main/deploys) |
-| [Development](https://dev.ds3utsc.com) | [![Netlify Status](https://api.netlify.com/api/v1/badges/a69e3dee-1833-4ec8-a5ba-a62b66e9714c/deploy-status)](https://app.netlify.com/sites/ds3-dev/deploys)  |
-
-## Getting Started
-
 You can run it by:
 
 ```sh
