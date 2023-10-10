@@ -1,4 +1,4 @@
-# DS<sup>3</sup> Website
+# CSU Website
 
 | Site                                   | Status                                                                                                                                                        |
 | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -7,13 +7,7 @@
 
 ## Getting Started
 
-Clone the project from GitHub
-
-```git
-git clone https://github.com/theDS3/Website.git
-```
-
-Then you can run it by:
+You can run it by:
 
 ```sh
 cd Website
