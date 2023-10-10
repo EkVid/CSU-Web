@@ -1,0 +1,50 @@
+---
+import Button from "./Button.astro";
+import team from "../assets/team.jpg";
+import c1 from "../assets/compound/compound.png";
+import c2 from "../assets/compound/c2.png";
+import c3 from "../assets/compound/c3.png";
+import c4 from "../assets/compound/c4.png";
+import { Image } from "astro:assets";
+
+import "../styles/components/Intro.scss";
+---
+
+<section id="intro">
+  <h1>Chemistry Student Society</h1>
+  <div class="content">
+    <br />
+    <br />
+    <p>
+      The Chemistry Society at University of Toronto Scarborough (<span
+        class="title">CSU</span
+      >) is an organization that collaborates with students to cultivate
+      innovative and fun academic events focusing on fostering relationships
+      between the faculty and the students
+    </p>
+    <Image
+      class="im"
+      src={team}
+      alt="CSU team picture"
+      loading="eager"
+      fetchpriority="high"
+      format="avif"
+    />
+    <Button title="Join Us" href="/" />
+    <!-- add link later -->
+    <div class="compound-container">
+      <div class="compound compound1">
+        <Image src={c1} alt="compound structure 1" format="avif" />
+      </div>
+      <div class="compound compound2">
+        <Image src={c2} alt="compound structure 2" format="avif" />
+      </div>
+      <div class="compound compound3">
+        <Image src={c3} alt="compound structure 3" format="avif" />
+      </div>
+      <div class="compound compound4">
+        <Image src={c4} alt="compound structure 4" format="avif" />
+      </div>
+    </div>
+  </div>
+</section>

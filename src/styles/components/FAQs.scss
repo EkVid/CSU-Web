@@ -1,0 +1,48 @@
+@import '../abstracts/mixins';
+
+#FAQs{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    justify-content: center; /* Center the content vertically */
+    gap: 1rem;
+    .underline {
+    border: none;
+    border-top: 1px solid black;
+    width: 100%;
+    margin-top: 5px;
+    }
+
+    .question i {
+        position: absolute;
+        top: 50%;
+        right: 20px; 
+        transform: translateY(-50%);
+      }
+
+    .faq {
+        font-family: Arial, sans-serif;
+      }
+      
+    .question {
+        width: 100%;
+        padding-top:10px;
+        cursor: pointer;
+    }
+      
+      .answer {
+        display: none;
+        padding: 10px;
+        width: 100%; 
+        text-align: left;
+      }
+    
+      .icon {
+        width: 50px; /* Set the width of the icons */
+        height: 50px; /* Set the height of the icons */
+        margin-left: 10px; /* Add some spacing between the text and the icons */
+        float: right; /* Float the icons to the right */
+        margin-top: -35px;
+      }
+}

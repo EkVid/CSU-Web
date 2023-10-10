@@ -1,0 +1,162 @@
+@import '../abstracts/mixins';
+
+#intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content horizontally */
+  justify-content: center; /* Center the content vertically */
+  gap: 1rem;
+
+  h1 {
+    color: #000000;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.15rem;
+
+    > span {
+      font-weight: 300;
+    }
+  }
+
+  .im{
+    border-radius: 20px;
+  }
+
+  .compound-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+  }
+  
+  .compound-container .compound {
+    width: 200px; /* Adjust the width as needed */
+    height: auto;
+    transform: rotate(20deg); /* Adjust the rotation angle as needed */
+  }
+  
+  .compound-container .compound:nth-child(2) {
+    transform: rotate(-10deg) translate(-50px, 60px); 
+  }
+
+  .compound-container .compound:nth-child(3){
+    transform: rotate(-20deg) translate(-30px, 60px);
+  }
+
+  .compound-container .compound:nth-child(4){
+    transform: rotate(-20deg);
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    p {
+      color: #000;
+      font-size: 1.25rem;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+
+      > .title {
+         color: #ADD8E6;
+      }
+
+    }
+
+    a {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    .compound-container .compound {
+      width: 150px; /* Decrease width for screens with a maximum width of 1100px */
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .compound-container .compound {
+      width: 120px; /* Decrease width for screens with a maximum width of 800px */
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .compound-container .compound {
+      width: 100px; /* Decrease width for screens with a maximum width of 600px */
+    }
+  }
+
+  @include geq(400px) {
+    h1 {
+      font-size: 3rem;
+    }
+
+    .content > p {
+      font-size: 1.5rem;
+    }
+  }
+
+  @include geq(700px) {
+    h1 {
+      font-size: 3rem;
+    }
+
+
+    .content > p {
+      font-size: 1.5rem;
+    }
+  }
+
+  @include geq(800px) {
+    h1 {
+      font-size: 3.5rem;
+    }
+
+    .content > p {
+      font-size: 1.75rem;
+    }
+  }
+
+  @include geq(1000px) {
+    h1 {
+      font-size: 3.5rem;
+    }
+
+    .content > p {
+      font-size: 2rem;
+    }
+  }
+
+  @include geq(1100px) {
+    h1 {
+      font-size: 5rem;
+    }
+
+    .content > p {
+      font-size: 2.25rem;
+    }
+  }
+
+  @include geq(1300px) {
+    .content > p {
+      font-size: 2.5rem;
+    }
+  }
+
+  @include geq(1400px) {
+    .content > p {
+      font-size: 2.5rem;
+    }
+  }
+
+  @include geq(1500px) {
+    .content > p {
+      font-size: 2.7rem;
+    }
+
+  }
+}
