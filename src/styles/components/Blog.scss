@@ -1,0 +1,33 @@
+#blogs {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    text-align: center;
+  
+    p {
+      font-size: 2rem;
+    }
+  
+    svg {
+      width: 45vw;
+      height: 35vh;
+    }
+
+    #date{
+        text-align: right;
+    }
+
+    #author {
+        text-align: right;
+    }
+
+    span{
+        color: mediumturquoise;
+    }
+
+    h3{
+        font-size: 1.5rem;
+    }
+
+  }
+  
