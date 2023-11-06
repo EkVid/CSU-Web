@@ -1,16 +1,16 @@
-import sitemap from '@astrojs/sitemap';
-import compress from 'astro-compress';
+import sitemap from "@astrojs/sitemap";
+import compress from "astro-compress";
 
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 
 // https://astro.build/config
 export default defineConfig({
   site:
-    process.env.NODE_ENV === 'production'
-      ? 'https://ds3utsc.com/'
-      : 'https://dev.ds3utsc.com/',
+    process.env.NODE_ENV === "production"
+      ? "https://csu-web.vercel.app/"
+      : "https://csu-web.vercel.app/",
   integrations: [
-    process.env.NODE_ENV === 'production' && sitemap(),
+    process.env.NODE_ENV === "production" && sitemap(),
     compress({
       CSS: true,
       HTML: {
