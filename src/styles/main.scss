@@ -1,7 +1,7 @@
-@import 'abstracts/functions';
 @import 'abstracts/mixins';
-@import 'abstracts/placeholders';
-@import 'abstracts/variables';
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+
+
 
 * {
   padding: 0;
@@ -16,9 +16,10 @@ html {
   background-color: #fff;
 }
 
+
 body {
   position: relative;
-  font-family: 'Josefin Sans Variable', sans-serif;
+  font-family: 'Comic Neue', sans-serif;
   height: 100%;
   width: 100%;
   background-color: #fff;
