@@ -1,11 +1,14 @@
 ---
 import "@fontsource-variable/josefin-sans";
 
+import Particles from "astro-particles";
+import type { ISourceOptions } from "tsparticles-engine";
+
 import Footer from "./Footer.astro";
 import Header from "./Header.astro";
-import Meta from "./Meta.astro";
 
 import "../styles/main.scss";
+import type { Code } from "astro:components";
 
 interface Props {
   title?: string;
@@ -16,6 +19,78 @@ const { title = "CSU", includeHeader = true } = Astro.props;
 
 const description =
   "The Chemistry Society at University of Toronto Scarborough (CSU) is an organization that collaborates with students to cultivate innovative and fun academic events focusing on fostering relationships between the faculty and the students";
+
+const particleJS: ISourceOptions = {
+  background: {
+    color: "#E6E6FA",
+  },
+  fullScreen: {
+    zIndex: -1,
+  },
+  interactivity: {
+    events: {
+      onClick: {
+        enable: false,
+      },
+      onHover: {
+        enable: false,
+      },
+      resize: true,
+    },
+  },
+  particles: {
+    collisions: {
+      enable: true,
+    },
+    color: {
+      value: "#fff",
+    },
+    move: {
+      direction: "none",
+      enable: true,
+      outMode: "out",
+      random: false,
+      speed: 1.5,
+      straight: false,
+    },
+    number: {
+      density: {
+        enable: true,
+      },
+      value: 50,
+    },
+    opacity: {
+      value: 0.5,
+    },
+    reduceDuplicates: true,
+    shape: {
+      type: "image",
+      image: [
+        {
+          src: "https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/1518/2017/10/04151637/1.12.png",
+        },
+        {
+          src: "https://chemed.chem.purdue.edu/genchem/topicreview/bp/1organic/graphics/img2.gif",
+        },
+        {
+          src: "https://i.stack.imgur.com/JgWzs.png",
+        },
+        {
+          src: "https://upload.wikimedia.org/wikipedia/commons/1/10/Cytosine_chemical_structure.png",
+        },
+      ],
+    },
+    size: {
+      random: true,
+      value: {
+        min: 30,
+        max: 40,
+      },
+    },
+  },
+  pauseOnOutsideViewport: true,
+  smooth: true,
+};
 ---
 
 <html lang="en">
@@ -23,23 +98,13 @@ const description =
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
     <meta name="description" content={description} />
-    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="keywords"
+      content="chemistry, toronto, scarborough, university of toronto scarborough"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
     <meta charset="utf-8" />
-
-    <!-- Tells Search Crawlers not to Index the Dev Site -->
-    {
-      process.env.NODE_ENV !== "production" && (
-        <meta name="robots" content="noindex, nofollow" />
-      )
-    }
-
-    <!-- Open Graph Metadata only on Production -->
-    {
-      process.env.NODE_ENV === "production" && (
-        <Meta ogTitle={title} ogDescription={description} />
-      )
-    }
 
     <title>{title}</title>
   </head>
@@ -49,12 +114,12 @@ const description =
       <slot />
     </main>
     <Footer />
+    <Particles id="tsparticles" options={particleJS} init="particlesInit" />
   </body>
 
   <script>
-    console.log(process.env.NODE_ENV);
-    import type { Engine } from "tsparticles-engine";
     import { loadFull } from "tsparticles";
+    import type { Engine } from "tsparticles-engine";
 
     declare global {
       interface Window {
@@ -62,9 +127,6 @@ const description =
       }
     }
 
-    // the function name is the parameter passed to the init attribute
-    // required
-    // add the function to window is mandatory, it will be searched there
     window.particlesInit = async function (engine: Engine) {
       await loadFull(engine);
     };
