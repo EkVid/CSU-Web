@@ -8,7 +8,6 @@ import Footer from "./Footer.astro";
 import Header from "./Header.astro";
 
 import "../styles/main.scss";
-import type { Code } from "astro:components";
 
 interface Props {
   title?: string;
@@ -39,6 +38,16 @@ const particleJS: ISourceOptions = {
     },
   },
   particles: {
+    rotate: {
+      value: 0,
+      random: true,
+      direction: "clockwise",
+      animation: {
+        enable: true,
+        speed: 5,
+        sync: false,
+      },
+    },
     collisions: {
       enable: true,
     },
