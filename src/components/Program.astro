@@ -1,5 +1,7 @@
 ---
 import "../styles/components/Program.scss";
+import { Image } from "astro:assets";
+import OH from "../assets/2024W_OH.png";
 ---
 
 <section id="program">
@@ -66,12 +68,16 @@ import "../styles/components/Program.scss";
       the executive team to chat about social and academic issues. Members are
       free to use our Chemistry textbook library, whiteboard to solve questions
       and eat from our office snack bar.
+      <br />
+      <span style="color:darksalmon"
+        >Below is the Office Hour Schedule for this semester:</span
+      >
     </p>
+    <Image src={OH} , alt="OH schedule" , class="OH" />
+    <div class="divider">
+      <span> •</span>
+    </div>
+    <br />
     <br />
   </div>
-  <div class="divider">
-    <span> •</span>
-  </div>
-  <br />
-  <br />
 </section>
