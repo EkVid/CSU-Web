@@ -1,0 +1,18 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Button from "../components/Button.astro";
+
+import "../styles/pages/404.scss";
+---
+
+<BaseLayout includeHeader={false} title="404">
+  <div class="error-container">
+    <h1 class="title">Oops</h1>
+    <p class="description">There is an error submitting the form</p>
+    <p class="description">
+      Please make sure your blog doesn't exceed the word limit in the blog
+      section
+    </p>
+    <Button title="BACK TO HOME" href="/" />
+  </div>
+</BaseLayout>
