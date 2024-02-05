@@ -1,0 +1,28 @@
+---
+import "../styles/components/Admin.scss";
+---
+
+<section id="admin">
+  <h2>Admin Login</h2>
+  <p>Only applicable for CSU executives</p>
+  <div class="container">
+    <form action="/your-server-endpoint" method="POST">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+      </div>
+    </form>
+    <div class="form-group">
+      <button type="submit">Log In</button>
+    </div>
+    <input
+      type="hidden"
+      name="_next"
+      value="https://csu-web.vercel.app/thankyou"
+    />
+  </div>
+</section>
