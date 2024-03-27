@@ -26,6 +26,33 @@
             "program": ""
           }
         ]
+      },
+      {
+        "month": "Feburary 2024",
+        "topic_of_the_month": "Biotechnology and Nanochemistry",
+        "articles": [
+          {
+            "contents": "Traditionally, medicinal drugs have used a passive drug release mechanism. In this type of mechanism, the drug is locally released in high concentrations and the concentration of the drug then exponentially decays over time. However, this mechanism cannot provide variable or extended drug concentrations. Therefore, to treat diseases such as diabetes, the patient must repeatedly take the drugs to maintain a high concentration that is effective in the treatment process. One improvement to this system was the creation of controlled-release strategies there were based on spatiotemporal profiles. The patient initially takes the drug but the healthcare provider and/or patient decides when the drug is released into body tissues. They can stimulate the release of the drug through various stimuli, including but not limited to temperature, light, magnetic field, ultrasound, electric currents, and mechanical forces. The healthcare provider can track the pathway of the drug to the target tissue. Once the drug reaches the vicinity of the target tissue, the drug can then be stimulated to be released and affect its target tissue. Recently, more autonomous drug release systems have been in development. These drug release systems allow for the release of the drug to be controlled by changes in pathological conditions. These changes, termed endogenous stimuli, include but are not limited to pH, reactive oxygen species/antioxidants, enzymes, glucose, mechanical strain, and temperature. The first four stimuli are biochemical signals whereas the last two are mechanical signals. These have been the most effective at delivering drugs effectively.",
+            "author": "Ananya Balaji",
+            "date": "Mar 1, 2024",
+            "year": "3",
+            "program": "Biochemistry & Music and Culture"
+          },
+          {
+            "contents": "The study of the synthesis, characterization, and manipulation of materials at the nanoscale—typically, 1 to 100 nanometers—is known as nanochemistry. The study delves into the distinct characteristics and actions of nanomaterials, resulting in progress across multiple domains such as healthcare, electronics, energy, and catalysis. The goal of nanomedicine is to use small particles called nanoparticles to create exact treatments for various conditions. These particles find application in a wide range of medication delivery methods, including radiation, cancer, gene therapy, and AIDS therapy. These particles' two advantages are their small size and the fact that they are made of biodegradable materials. They dissolve quicker and enter your body more readily since they are so little and have a large surface area. They can also quickly enter tumours, the brain, and lungs. The Pfizer and Moderna COVID-19 vaccines are two well-known examples of how mRNA is used to help create immunity to the virus; however, because mRNA degrades quickly, it is delivered into cells using a lipid nanoparticle delivery system. The mRNA molecules are encapsulated and shielded by them, which permits them to enter cells safely and give directions to make viral proteins that set off an immune response. Magnetic resonance imaging (MRI) is another example of nanochemistry in healthcare; it creates finely detailed images of your tissues and organs through the utilization of radio waves and magnetic fields. Contrast agents with improved magnetic characteristics over conventional agents can be created thanks to nanochemistry. Stronger signals can be produced by designing nanoparticles, such as those based on iron oxide or gadolinium, which will enhance image quality and improve tissue contrast.",
+            "author": "Jennifer Zaman",
+            "date": "Mar 1, 2024",
+            "year": "2",
+            "program": "Biochemistry, Biology, Natural Sciences & Environmental Management"
+          },
+          {
+            "contents": "Last December, “Casgevy” was the first gene therapy (CRISPR/Cas9) which has been FDA approved for the treatment of Sickle Cell disease. Sickle cell disease (SCD) is a blood disorder in which red blood cells (RBC) take on a rigid “sickle” shape. How the disease works is that hemoglobin, a protein in the red blood cells that carries oxygen to tissues in the body, becomes abnormal due to recessive inheritance of genes which code for the abnormal protein hemoglobin “S”. The red blood cells that take on the “sickle” shape, are prone to dying much earlier than unaffected cells. This results in a consistent shortage of red blood cells which can cause severe pain and organ damage due to insufficient amounts of oxygen delivery. This rare disease which has been the cause of life threatening disabilities and early death has harmed roughly 6,500 people in Canada and approximately 100,000 Americans and has most impacted Black and Hispanic communities.The gene therapy Casgevy is a somatic gene therapy approved for patients 12 and older. It functions by modifying blood stem cells via genome editing, CRISPR/Cas9 technology. CRISPR/Cas9 removes or adds or replaces where DNA has been cut previously by the technology and these modified stem cells are transplanted back into the patient within the bone marrow by engrafting, promoting the increase of hemoglobin.One of my main concerns with this innovation is whether or not it will be affordable since genome wide sequencing (GWS), a method medical geneticists use to diagnose illnesses, has dropped in pricing dramatically over the years, from roughly 3 billion during the time of the HUman Genome Project to it's price today which ranges from a couple hundred to couple thousand dollars.. Currently the therapy is priced at around 2.2 million due to the complexity of the treatment.",
+            "author": "Idil Gure",
+            "date": "Mar 1, 2024",
+            "year": "3",
+            "program": "Biochemistry"
+          }
+        ]
       }
     ]
   }

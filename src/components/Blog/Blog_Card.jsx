@@ -12,10 +12,13 @@ const Blog_Card = ({ blogdata }) => {
             <article key={articleIndex}>
               <p>{article.contents}</p>
               <p id="date">{article.date}</p>
+              <br/>
               <p id="author">By <span>{article.author}</span></p>
+              <br/>
               {article.year && <p id="date">Year of Study: {article.year}</p>}
-              {article.program && <p id="date">Programs of Study: {article.program}</p>}
               {/* using date id for the style purpose */}
+              <br/>
+              {article.program && <p id="program">Programs of Study: {article.program}</p>}
               <br/>
             </article>
           ))}
