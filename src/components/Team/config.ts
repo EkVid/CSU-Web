@@ -15,6 +15,9 @@ import Austin from "../../assets/Team/Executives/Austin Yang.jpg"
 import Nhien from "../../assets/Team/Executives/Nhien Dinh.jpg";
 import De_Mario from "../../assets/Team/Executives/De-Mario Knowles.jpg";
 import Rachel from "../../assets/Team/Executives/Rachel Ye.jpg";
+import Angelina from "../../assets/Team/Executives/Angelina Cao.jpg";
+import Arabi from "../../assets/Team/Executives/Arabi Mahanujam.jpg";
+
 
 
 export interface TeamMember {
@@ -118,5 +121,17 @@ export const team: Record<TeamGroups, TeamMember[]> = {
       src: Rachel,
       alt:'Rachel Ye',
     },
+    {
+      name:'Angelina Cao',
+      position: 'Director of Events',
+      src: Angelina,
+      alt: 'Angelina Cao',
+    },
+    {
+      name: 'Arabi Mahanujam',
+      position: 'Director of Events',
+      src: Arabi,
+      alt: 'Arabi Mahanujam'
+    }
   ],
 };
