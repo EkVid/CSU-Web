@@ -1,23 +1,24 @@
 import type { ImageMetadata } from 'astro';
 
-import Sukriti from "../../assets/Team/Executives/Sukriti Kothari.jpg";
-import Keerthika from "../../assets/Team/Executives/Keerthika Selvakumar.jpg";
-import Khadije from "../../assets/Team/Executives/Khadije Ramadan.jpg";
-import Aymen from "../../assets/Team/Executives/Aymen Rizwan.jpg";
-import Dora from "../../assets/Team/Executives/Dora Wu.jpg";
-import Papina from "../../assets/Team/Executives/Papina Gnaneswaran.jpg";
-import Kagesan from "../../assets/Team/Executives/Kagesan Sriharan.jpg";
-import Anindro from "../../assets/Team/Executives/Anindro Bhattacharya.jpg";
-import Dana from "../../assets/Team/Executives/Dana Abughaduma.jpg";
-import Vanessa from "../../assets/Team/Executives/Vanessa Hing.jpg";
-import Jaelyn from "../../assets/Team/Executives/Jaelyn Lee.jpg";
-import Austin from "../../assets/Team/Executives/Austin Yang.jpg"
-import Nhien from "../../assets/Team/Executives/Nhien Dinh.jpg";
-import De_Mario from "../../assets/Team/Executives/De-Mario Knowles.jpg";
-import Rachel from "../../assets/Team/Executives/Rachel Ye.jpg";
-import Angelina from "../../assets/Team/Executives/Angelina Cao.jpg";
-import Arabi from "../../assets/Team/Executives/Arabi Mahanujam.jpg";
-
+import Abdumalik from "../../assets/Team/Executives/New_Abdumalik.jpg";
+import Ananya from "../../assets/Team/Executives/New_Ananya.jpg";
+import Angelina from "../../assets/Team/Executives/New_Angelina.jpg";
+import Dana from "../../assets/Team/Executives/New_Dana.jpg";
+import Dora from "../../assets/Team/Executives/New_Dora.jpg";
+import Elena from "../../assets/Team/Executives/New_Elena.jpg";
+import Fahad from "../../assets/Team/Executives/New_Fahad.jpg";
+import Jaelyn from "../../assets/Team/Executives/New_Jaelyn.jpg";
+import Jessica from "../../assets/Team/Executives/New_Jessica.jpg";
+import Julia from "../../assets/Team/Executives/New_Julia.jpg";
+import Kagesan from "../../assets/Team/Executives/New_Kagesan.jpg";
+import Keerthika from "../../assets/Team/Executives/New_Keerthika.jpg"
+import Khadije from "../../assets/Team/Executives/New_Khadije.jpg";
+import Krishna from "../../assets/Team/Executives/New_Krishna.jpg";
+import Nhien from "../../assets/Team/Executives/New_Nhien.jpg";
+import Pavishan from "../../assets/Team/Executives/New_Pavishan.jpg";
+import Punita from "../../assets/Team/Executives/New_Punita.jpg";
+import Mehak from "../../assets/Team/Executives/New_Mehak.jpg";
+import Sondoss from "../../assets/Team/Executives/New_Sondoss.jpg";
 
 
 export interface TeamMember {
@@ -32,12 +33,6 @@ type TeamGroups = 'Executives';
 export const team: Record<TeamGroups, TeamMember[]> = {
   Executives: [
     {
-      name: 'Sukriti Kothari',
-      position: 'Co - President',
-      src: Sukriti,
-      alt: 'Sukriti Kothari',
-    },
-    {
       name: 'Keerthika Selvakumar',
       position: 'Co - President',
       src: Keerthika,
@@ -45,27 +40,33 @@ export const team: Record<TeamGroups, TeamMember[]> = {
     },
     {
       name: 'Khadije Ramadan',
-      position: 'Vice President External ',
+      position: 'Co - President',
       src: Khadije,
       alt: 'Khadije Ramadan',
     },
     {
-      name: 'Aymen Rizwan',
-      position: 'Vice President of Internal',
-      src: Aymen,
-      alt: 'Aymen Rizwan',
-    },
-    {
       name: 'Dora Wu',
-      position: 'Outreach Coordinator',
+      position: 'Vice President External ',
       src: Dora,
       alt: 'Dora Wu',
     },
     {
-      name: 'Papina Gnaneswaran',
+      name: 'Dana Abughaduma',
+      position: 'Vice President Internal',
+      src: Dana,
+      alt: 'Dana Abughaduma',
+    },
+    {
+      name: 'Julia Gorovitz',
       position: 'Outreach Coordinator',
-      src: Papina,
-      alt: 'Papina Gnaneswaran',
+      src: Julia,
+      alt: 'Julia Gorovitz',
+    },
+    {
+      name: 'Abdumalik Okhunjonav',
+      position: 'Outreach Coordinator',
+      src: Abdumalik,
+      alt: 'Abdumalik Okhunjonav',
     },
     {
       name: 'Kagesan Sriharan',
@@ -74,22 +75,40 @@ export const team: Record<TeamGroups, TeamMember[]> = {
       alt: 'Kagesan Sriharan',
     },
     {
-      name: 'Anindro Bhattacharya',
-      position: 'Chem - Aid Director',
-      src: Anindro,
-      alt: 'Anindro Bhattacharya',
+      name: 'Fahad Bastians',
+      position: 'Chem-Aid Director',
+      src: Fahad,
+      alt: 'Fahad Bastians',
     },
     {
-      name:'Dana Abughaduma',
+      name: 'Punita Lalchand',
+      position: 'Head Tutor',
+      src: Punita,
+      alt: 'Punita Lalchand',
+    },
+    {
+      name: 'Krishna Bajaj',
+      position: 'Director of Academics',
+      src: Krishna,
+      alt: 'Krishna Bajaj',
+    },
+    {
+      name: 'Jessica Yang',
+      position: 'Director of Academics',
+      src: Jessica,
+      alt: 'Jessica Yang',
+    },
+    {
+      name:'Pavishan Sivaneswaran',
       position: 'Director of Marketing - Social Media',
-      src: Dana,
-      alt:'Dana Abughaduma',
+      src: Pavishan,
+      alt:'Pavishan Sivaneswaran',
     },
     {
-      name:'Vanessa Hing',
+      name:'Sondoss Sayeh',
       position: 'Director of Marketing - Graphic Design',
-      src: Vanessa,
-      alt:'Vanessa Hing',
+      src: Sondoss,
+      alt:'Sondoss Sayeh',
     },
     {
       name:'Jaelyn Lee',
@@ -98,10 +117,28 @@ export const team: Record<TeamGroups, TeamMember[]> = {
       alt:'Jaelyn Lee',
     },
     {
-      name:'Austin Yang',
+      name:'Elena Osipyan',
+      position: 'Director of Marketing - Graphic Design',
+      src: Elena,
+      alt:'Elena Osipyan',
+    },
+    {
+      name:'Mehak Mahajan',
       position: 'Director of Marketing - Web Master',
-      src: Austin,
-      alt:'Austin Yang',
+      src: Mehak,
+      alt:'Mehak Mahajan',
+    },
+    {
+      name:'Angelina Cao',
+      position: 'Director of Events',
+      src: Angelina,
+      alt:'Angelina Cao',
+    },
+    {
+      name:'Ananya Balaji',
+      position: 'Director of Events',
+      src: Ananya,
+      alt:'Ananya Balaji',
     },
     {
       name:'Nhien Dinh',
@@ -109,29 +146,5 @@ export const team: Record<TeamGroups, TeamMember[]> = {
       src: Nhien,
       alt:'Nhien Dinh',
     },
-    {
-      name:'De-Mario Knowles',
-      position: 'Director of Events',
-      src: De_Mario,
-      alt:'De-Mario Knowles',
-    },
-    {
-      name:'Rachel Ye',
-      position: 'Director of Events',
-      src: Rachel,
-      alt:'Rachel Ye',
-    },
-    {
-      name:'Angelina Cao',
-      position: 'Director of Events',
-      src: Angelina,
-      alt: 'Angelina Cao',
-    },
-    {
-      name: 'Arabi Mahanujam',
-      position: 'Director of Events',
-      src: Arabi,
-      alt: 'Arabi Mahanujam'
-    }
   ],
 };
