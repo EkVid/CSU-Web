@@ -16,7 +16,6 @@ import Khadije from "../../assets/Team/Executives/New_Khadije.jpg";
 import Krishna from "../../assets/Team/Executives/New_Krishna.jpg";
 import Nhien from "../../assets/Team/Executives/New_Nhien.jpg";
 import Pavishan from "../../assets/Team/Executives/New_Pavishan.jpg";
-import Punita from "../../assets/Team/Executives/New_Punita.jpg";
 import Mehak from "../../assets/Team/Executives/New_Mehak.jpg";
 import Sondoss from "../../assets/Team/Executives/New_Sondoss.jpg";
 
@@ -79,12 +78,6 @@ export const team: Record<TeamGroups, TeamMember[]> = {
       position: 'Chem-Aid Director',
       src: Fahad,
       alt: 'Fahad Bastians',
-    },
-    {
-      name: 'Punita Lalchand',
-      position: 'Head Tutor',
-      src: Punita,
-      alt: 'Punita Lalchand',
     },
     {
       name: 'Krishna Bajaj',
