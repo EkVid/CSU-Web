@@ -2,6 +2,7 @@
 import "../styles/components/Program.scss";
 import { Image } from "astro:assets";
 import OH from "../assets/2024_OH2.png";
+import CAS from "../assets/CAS.png";
 ---
 
 <section id="program">
@@ -51,7 +52,14 @@ import OH from "../assets/2024_OH2.png";
       Physical Sciences Association (EPSA) and our organization. The centre
       provides in-person help to assist students in course material such as
       prelaboratory help, laboratory techniques and course content.
+      <br />
+      <span style="color:darksalmon"
+        > Below is the Chem-Aid Centre Schedule:</span>
     </p>
+    <Image src={CAS} , alt="Chem-Aid Schedule" , class="Chem-Aid" />
+    <div class="divider">
+      <span> •</span>
+    </div>
     <br />
   </div>
   <div class="divider">
@@ -67,11 +75,7 @@ import OH from "../assets/2024_OH2.png";
       The Chemistry Society at UTSC provides time for our CSU members to talk to
       the executive team to chat about social and academic issues. Members are
       free to use our Chemistry textbook library, whiteboard to solve questions
-      and eat from our office snack bar.
-      <br />
-      <span style="color:darksalmon"
-        >Below is the Office Hour Schedule for this semester:</span
-      >
+      and eat from our office snack bar. Below is the schedule!
     </p>
     <Image src={OH} , alt="OH schedule" , class="OH" />
     <div class="divider">
