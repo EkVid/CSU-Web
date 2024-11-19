@@ -53,6 +53,26 @@
             "program": "Biochemistry"
           }
         ]
+      },
+      {
+        "month": "March 2024",
+        "topic_of_the_month": "Forensic Science and Toxicology",
+        "articles": [
+          {
+            "contents": "Bloodstains are frequently encountered in crime scenes. Accurately estimating a bloodstain's age is paramount to criminal investigation but challenging. Scientific methods such as high-performance liquid chromatography (HPLC), RNA degradation, and the analysis of serum (the plasma of the blood after clotting factors have been removed) have been explored but have limited forensic application due to multiple factors. For example, the last technique mentioned is not a good approach to most investigations due to the amount of blood found on the crime scene rarely being sufficient to extract the ideal amount of serum to analyze. In recent case studies, gaining popularity around 2017, vibrational spectroscopy techniques, such as Fourier transform infrared (FTIR) spectroscopy, are gaining popularity as fast, non-destructive, quantitative, and precise methods. More specifically, attenuated total reflection (ATR)-FTIR is known to be one of the most common measurement techniques for FTIR, due to its broad range of applications and accuracy. One of those applications is, precisely, investigating the age of the bloodstain. FTIR is efficient in identifying and quantifying bloodstain degradation due to occurrences such as autoxidation of hemoglobin when blood is exposed to air. In multiple publications from 2017-2020, ATR-FTIR is experimentally used to differentiate bloodstains by age, bloodstains found both outdoors and indoors. Results consistently showed that, as the period in which the bloodstain was exposed increased, the absorbance values collected from the spectroscopy analysis decreased. This is attributed to the structural changes in hemoglobin. Other discoveries obtained from this analysis were different peaks observed in each FTIR spectrum for each blood type. For example, peaks at 1033 cm−1 and 2844 cm−1 are present in AB and O blood and absent in A and B blood.",
+            "author": "Julia Gorovitz",
+            "date": "Mar 27, 2024",
+            "year": "1",
+            "program": "Physics and Astrophysics & Chemistry"
+          },
+          {
+            "contents": "In forensic science the combinations of the disciplines of science and the law, different instruments or techniques regularly used in labs can be applied to solving a case. The fingerprint has been a staple of forensic investigation, Sir Francis Galton is recognized as the first person to publish a classification system for fingerprinting and noting their main features of loops, whorls, and arches in the 19th century. Artificial intelligence (AI) has been a hot button topic in recent years due to its variety of versatility in the artistic, corporate world, and also within the industry of forensics. There are some current applications of the technology as well as many potential implications in the field. One current application of the technology has been for analyzing digital evidence, for detecting faces and objects. It can also be a quick way to extract texts of interest from documents, however, recently there have been some experimental applications of the technology. Earlier this January Columbia University’s undergraduate engineers have utilized AI to analyze the uniqueness, characterized by forensic contributors such as Galton, and have claimed in their research that fingerprints may not differ too much from person to person. Though their paper has been rejected by well-established forensic journals, the team claims that the AI, which has been fed 60,000 prints from a public U.S government database, uses a different kind of marker than the traditional branching and endpoints observed. The technology used the angles and curvature of swirls and loops in the center of the fingerprint. This demonstrates that AI has a potential in improving accuracy within the field. It is worth noting the team creating using this technology had no prior knowledge of forensics and the system they were using had been only working with thousands of fingerprints, so access to broader datasets would be needed for more careful validation. The paper they created was appealed by a professor of innovation in the Department of Mechanical Engineering and was accepted for publication by Science Advances. The professor discussed that this research into AI could help provide knowledge for pre-existing forensic datasets, which could have major implications in the field, such as properly convicting or acquitting others.",
+            "author": "Idil Gure",
+            "date": "Mar 27, 2024",
+            "year": "3",
+            "program": "Biochemistry"
+          }
+        ]
       }
     ]
   }
