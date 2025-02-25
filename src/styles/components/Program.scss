@@ -1,0 +1,71 @@
+@import '../abstracts/mixins';
+
+#program {
+  text-align: center;
+
+  .description {
+    font-size: 1.5rem;
+    padding-bottom: 1em;
+  }
+
+  .covalent{
+    text-align: left;
+    ul li{
+      margin-bottom: 10px;
+      color:darksalmon;
+    }
+  }
+
+  .aid{
+    text-align: left;
+  }
+
+  .OH{
+    text-align: left;
+  }
+
+  h3{
+    font-weight: 400;
+    font-size: 2rem;
+  }
+
+  p{
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+
+
+  .divider {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #000; /* Change the color of the divider */
+  }
+  
+  .divider::before,
+  .divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #000; /* Change the color of the line */
+    margin: 0 10px; /* Adjust the space between the line and the dots */
+    height: 1px; /* Adjust the thickness of the line */
+  }
+  
+  .divider span {
+    font-size: 24px; /* Adjust the size of the dots */
+    line-height: 1;
+  }
+  
+}
+
+@include geq(1100px) {
+  #program > .description {
+    padding: 0 5em 1em;
+  }
+}
+
+@include geq(1300px) {
+  #program > .description {
+    padding: 0 7em 1em;
+  }
+}

@@ -1,0 +1,29 @@
+---
+import team from "../assets/team.jpg";
+import { Image } from "astro:assets";
+
+import "../styles/components/Intro.scss";
+---
+
+<section id="intro">
+  <h1>Chemistry Student Society</h1>
+  <div class="content">
+    <br />
+    <br />
+    <p>
+      The Chemistry Society at University of Toronto Scarborough (<span
+        class="title">CSU</span
+      >) is an organization that collaborates with students to cultivate
+      innovative and fun academic events focusing on fostering relationships
+      between the faculty and the students
+    </p>
+    <Image
+      class="im"
+      src={team}
+      alt="CSU team picture"
+      loading="eager"
+      fetchpriority="high"
+      format="avif"
+    />
+  </div>
+</section>

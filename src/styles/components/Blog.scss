@@ -1,0 +1,56 @@
+#blogs {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    text-align: center;
+  
+    p {
+      font-size: 1.25rem;
+    }
+  
+    svg {
+      width: 45vw;
+      height: 35vh;
+    }
+
+    #date{
+        text-align: right;
+        font-size: 1.25rem;
+    }
+
+    #program{
+      text-align: right;
+      font-size: 1.25rem;
+      color:brown;
+      margin-bottom: 20px;
+    }
+
+    #author {
+        text-align: right;
+        font-size: 1.25rem;
+    }
+
+    span{
+        color: mediumturquoise;
+    }
+
+    #submitmsg{
+      font-size: 1.25rem;
+      text-align: center;
+    }
+
+    #topic, #names{
+        font-size: 1.25rem;
+        text-align: left;
+    }
+
+    #topic, #names{
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    #names{
+      color:darksalmon;
+    }
+  }
+  

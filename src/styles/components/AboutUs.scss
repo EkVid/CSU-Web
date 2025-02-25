@@ -1,0 +1,15 @@
+#about-us {
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+  text-align: center;
+
+  p {
+    font-size: 2rem;
+  }
+
+  svg {
+    width: 45vw;
+    height: 35vh;
+  }
+}

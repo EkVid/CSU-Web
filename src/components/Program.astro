@@ -1,0 +1,90 @@
+---
+import "../styles/components/Program.scss";
+import { Image } from "astro:assets";
+import OH from "../assets/CSU_OH_New.png";
+import CAS from "../assets/Chem-Aid_centre2.png";
+---
+
+<section id="program">
+  <h2>Our Programs</h2>
+  <p class="description">We provide .....</p>
+  <div class="divider">
+    <span> •</span>
+  </div>
+  <br />
+  <div class="covalent">
+    <h3>Covalent Network</h3>
+    <br />
+    <br />
+    <p>
+      The Covalent Network Program is a program where CSU members can have
+      benefits include:
+    </p>
+    <br />
+    <ul>
+      <li>
+        Discounts to our on and off-campus events such as liquid nitrogen
+        ice-cream
+      </li>
+      <li>Access to volunteer opportunities such as science outreach events</li>
+    </ul>
+    <ul>
+      <li>
+        A CSU membership costs $5 and is valid for the entirety of a student's
+        enrollment at UTSC
+      </li>
+      <li>
+        Discounts on lab notebooks sold by CSU (if purchased with a membership)
+      </li>
+    </ul>
+  </div>
+  <div class="divider">
+    <span> •</span>
+  </div>
+  <div class="aid">
+    <br />
+    <br />
+    <h3>The Chemistry Aid Center</h3>
+    <br />
+    <br />
+    <p>
+      The Chemistry Aid Centre is a centre co-ran by the Environmental and
+      Physical Sciences Association (EPSA) and our organization. The centre
+      provides in-person help to assist students in course material such as
+      prelaboratory help, laboratory techniques and course content.
+      <br />
+      <span style="color:rgb(243, 179, 157)"
+        > Below is the Chem-Aid Centre Schedule:</span>
+    </p>
+    <Image src={CAS} , alt="Chem-Aid Schedule" , class="Chem-Aid" 
+        width="600"
+        height="600"
+    />
+
+    
+  <div class="divider">
+    <span> •</span>
+  </div>
+  <div class="OH">
+    <br />
+    <br />
+    <h3>Office Hours</h3>
+    <br />
+    <br />
+    <p>
+      The Chemistry Society at UTSC provides time for our CSU members to talk to
+      the executive team to chat about social and academic issues. Members are
+      free to use our Chemistry textbook library, whiteboard to solve questions
+      and eat from our office snack bar. Below is the schedule!
+    </p>
+    <Image src={OH} , alt="OH schedule" , class="OH" 
+        width="600"
+        height="900"
+    />
+    <div class="divider">
+      <span> •</span>
+    </div>
+    <br />
+    <br />
+  </div>
+</section>

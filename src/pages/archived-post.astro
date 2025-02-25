@@ -1,0 +1,14 @@
+---
+import "../styles/components/Blog.scss";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Blog_Card from "../components/Blog/Blog_Card";
+import past_blog from "../components/Blog/past_blog.json";
+import Button from "../components/Button.astro";
+---
+
+<BaseLayout includeHeader={false} title="archived-post">
+  <section id="blogs">
+    <Blog_Card blogdata={past_blog} />
+    <Button title="BACK TO HOME" href="/" />
+  </section>
+</BaseLayout>

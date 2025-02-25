@@ -1,0 +1,27 @@
+---
+interface Props {
+  ogTitle: string;
+  ogDescription: string;
+  ogImage?: string;
+}
+
+const { ogTitle, ogDescription, ogImage = "/team.jpg" } = Astro.props;
+---
+
+<!-- Sitemap -->
+<link rel="sitemap" href="/sitemap-index.xml" />
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://csu-web.vercel.app/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content={ogTitle} />
+<meta property="og:description" content={ogDescription} />
+<meta property="og:image" content={ogImage} />
+<meta property="og:site_name" content="Chemstry Student Society" />
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content={ogImage} />
+<meta property="twitter:url" content="https://csu-web.vercel.app/" />
+<meta name="twitter:title" content={ogTitle} />
+<meta name="twitter:description" content={ogDescription} />
+<meta name="twitter:image" content={ogImage} />

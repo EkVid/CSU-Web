@@ -1,0 +1,112 @@
+---
+import { Image } from "astro:assets";
+import { Icon } from "astro-icon";
+
+import logo from "../assets/logo.png";
+import "../styles/layout/Header.scss";
+
+interface Link {
+  title: string;
+  href: string;
+  sublinks?: Link[];
+}
+
+const links: Link[] = [
+  { title: "About Us", href: "/#about-us" },
+  { title: "Program", href: "/#program" },
+  { title: "Team", href: "/#team" },
+  { title: "FAQs", href: "/#FAQs" },
+  { title: "Blog", href: "/#blogs" },
+  { title: "Archived Blog", href: "/archived-post" },
+];
+---
+
+<header>
+  <a href="/#intro">
+    <Image
+      src={logo}
+      loading="eager"
+      alt="logo"
+      fetchpriority="high"
+      format="avif"
+    />
+  </a>
+  <nav>
+    <ul class="menu">
+      {
+        links.map((link) => {
+          if (link.sublinks === undefined)
+            return (
+              <li class="item">
+                <a href={link.href}>{link.title}</a>
+              </li>
+            );
+        })
+      }
+    </ul>
+  </nav>
+  <span class="toggle">
+    <Icon class="times" name="fa:times" />
+    <Icon class="bars" name="fa:bars" />
+  </span>
+</header>
+
+<script is:inline>
+  // Get DOM Elements
+  const nav = document.querySelector("nav");
+  const menu = document.querySelector(".menu");
+  const items = document.querySelectorAll(".item");
+  const toggle = document.querySelector(".toggle");
+
+  // Open the Menu
+  const openMenu = () => {
+    menu.classList.add("active");
+    nav.classList.add("show");
+    document.body.style.overflow = "hidden";
+    toggle.querySelector(".bars").style.display = "none";
+    toggle.querySelector(".times").style.display = "unset";
+  };
+
+  // Close the Menu
+  const closeMenu = () => {
+    menu.classList.remove("active");
+    nav.classList.remove("show");
+    document.body.style.overflow = "initial";
+    toggle.querySelector(".bars").style.display = "unset";
+    toggle.querySelector(".times").style.display = "none";
+  };
+
+  /* Event Listeners */
+
+  // Close Mobile Menu on Escape Keypress
+  document.addEventListener("keydown", function ({ key }) {
+    if (
+      (key === "Escape" || key === "Esc") &&
+      menu.classList.contains("active")
+    )
+      closeMenu();
+  });
+
+  // Close Mobile Menu on Clicking Outside
+  document.addEventListener("click", (e) => {
+    if (
+      !menu.contains(e.target) &&
+      menu.classList.contains("active") &&
+      !toggle.contains(e.target) &&
+      !e.target.classList.contains("toggle") &&
+      !e.target.classList.contains("item")
+    )
+      closeMenu();
+  });
+
+  // Toggle Mobile Menu
+  toggle.addEventListener("click", () => {
+    menu.classList.contains("active") ? closeMenu() : openMenu();
+  });
+
+  for (const item of items) {
+    item.querySelector(".submenu")
+      ? item.addEventListener("click", toggleSubmenu) // Toggle SubMenu
+      : item.addEventListener("click", closeMenu); // Close Mobile Menu on Item Click
+  }
+</script>
