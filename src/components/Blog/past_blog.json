@@ -73,6 +73,19 @@
             "program": "Biochemistry"
           }
         ]
+      },
+      {
+        "month": "November 2025",
+        "topic_of_the_month": "Chemistry in Movies or TV Shows",
+        "articles": [
+          {
+            "contents": "Chemistry often finds itself at the heart of gripping narratives in TV shows and movies, where it transcends textbooks and laboratory settings to capture the imagination of millions. From life-or-death problem-solving to whimsical experimentation, chemistry brings authenticity and intrigue to the screen, transforming science into a central character in its own right. One of the most celebrated depictions of chemistry is AMC’s Breaking Bad. The series artfully blends accurate chemical processes with high-stakes drama. Walter White’s mastery of chemical reactions is central to the story, with scenes showcasing the creation of thermite to break through metal locks or the use of hydrofluoric acid to dissolve organic matter. These moments not only provide an adrenaline rush but also serve as a subtle nod to the real-world power—and responsibility—of chemical knowledge. On the cinematic stage, The Martian demonstrates the life-saving potential of chemistry. Stranded on Mars, the protagonist, Mark Watney, relies on his scientific expertise to generate water by chemically reducing hydrazine. This gripping display of ingenuity and survival underscores the role of chemistry as a tool for problem-solving in extreme environments. For younger audiences, movies like Flubber take a more whimsical approach, imagining the creation of an elastic, gravity-defying substance. While the science is fantastical, it plants the seeds of curiosity about polymers and experimental chemistry in budding scientists. Even beyond entertainment, these portrayals reveal how chemistry shapes the fabric of everyday life. Whether solving crimes, exploring new frontiers, or inventing extraordinary materials, the integration of chemistry into storytelling fosters a deeper appreciation for the science that powers our world. By weaving together reality and imagination, TV shows and movies bring chemistry into focus—not as an abstract subject, but as a creative, dynamic force. They remind us that chemistry is not confined to laboratories; it’s a lens through which we can understand and shape our universe.",
+            "author": "Kimia Karim Koshteh",
+            "date": "Nov 19, 2024",
+            "year": "2",
+            "program": "Biochemistry"
+          }
+        ]
       }
     ]
   }
